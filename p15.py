@@ -5,11 +5,15 @@ def is_increase(n):
     check = True
     while n > 0:
         a = n % 10
-        print(a)
-        print(b)
         if b < a: check = False
         b = a
         n//=10
-    if check: return False
-    else: return True
-is_increase(12345678888888888888889)
+    if check: return True
+    else: return False
+
+t = int(input())
+while t> 0:
+    n = int(input())
+    if is_increase(n): print('YES')
+    else: print('NO')
+    t-=1
