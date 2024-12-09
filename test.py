@@ -1,15 +1,7 @@
-def is_increase(n):
-    a = 0
-    b = n % 10
-    n//=10
-    check = True
-    while n > 0:
-        a = n % 10
-        print(a)
-        print(b)
-        if b < a: check = False
-        b = a
-        n//=10
-    if check: return False
-    else: return True
-is_increase(12345678888888888888889)
+P = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ_.'
+while True:
+    n = input().split()
+    k = int(n[0])
+    s = str(n[1])
+    s[1] = 'a'
+    print(s[1])
