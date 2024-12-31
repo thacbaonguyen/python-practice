@@ -19,6 +19,7 @@
 from collections import Counter
 
 
-data = [1, 2 ,2 ,2 ,3 ,4 ,3 ,2 ,1 ,2, 2]
-s = [0, 1, 2 ,3]
-print(s[-2])
+s ='ngao.'
+tmp = s.split('.')
+print(tmp)
+print(tmp[0])
