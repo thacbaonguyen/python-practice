@@ -18,6 +18,7 @@
 #         print(i)
 from collections import Counter
 
+
 data = [1, 2 ,2 ,2 ,3 ,4 ,3 ,2 ,1 ,2, 2]
-s = Counter(data)
-print(s)
+s = [0, 1, 2 ,3]
+print(s[-2])
