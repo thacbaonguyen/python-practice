@@ -16,8 +16,8 @@
 #     list_content = file.readlines()
 #     for i in list_content:
 #         print(i)
+from collections import Counter
 
-a = [4]
-b = [1, 2, 3, 'a']
-a.append(2)
-print(a[1])
+data = [1, 2 ,2 ,2 ,3 ,4 ,3 ,2 ,1 ,2, 2]
+s = Counter(data)
+print(s)
