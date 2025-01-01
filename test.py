@@ -18,8 +18,8 @@
 #         print(i)
 from collections import Counter
 
-
-s ='ngao.'
-tmp = s.split('.')
-print(tmp)
-print(tmp[0])
+map = {}
+map['ok'] = (2, 3)
+map['kk'] = ('d', 'for')
+for key in map:
+    print(key)
