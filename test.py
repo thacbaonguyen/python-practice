@@ -16,19 +16,18 @@
 #     list_content = file.readlines()
 #     for i in list_content:
 #         print(i)
-import math
+from collections import Counter
 
-rs = []
-def is_prime(n):
-    if n < 2:
-        return False
-    if n == 2:
-        return True
-    for i in range(2, int(math.sqrt(n) + 1)):
-        if n % i == 0:
-            return False
-    return True
-for i in range(2, 10000):
-    if is_prime(i):
-        rs.append(i)
-print(rs)
+n, m = map(int, input().split())
+a = list(map(int, input().split()))
+# a.sort()
+b = Counter(a).most_common(1)
+c = Counter(a)
+check = True
+for x, y in c.items():
+    if y < b[0][1]:
+        print(x)
+        check = False
+        break
+if check:
+    print('NONE')
